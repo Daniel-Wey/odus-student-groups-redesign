@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import AskQuestion from './AskQuestion.js'
+import SplashPage from './SplashPage.js'
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         >
           Learn React
         </a>
+        <AskQuestion/>
+        <SplashPage/>
       </header>
     </div>
   );
