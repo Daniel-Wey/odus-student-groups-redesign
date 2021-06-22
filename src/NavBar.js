@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { NavLink } from "react-router-dom";
+import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 import {
   Collapse,
   Navbar,
@@ -24,23 +24,23 @@ class NavBar extends React.Component {
 
           <Nav className="ml-auto" navbar>
             <NavItem>
-              <NavLink>Home</NavLink>
+              <Link to =  "/">Home</Link>
             </NavItem>
             <NavItem>
-              <NavLink className = "navbar-item" activeClassName = "is-active" to = "/about">About</NavLink>
+              <Link className = "navbar-item" activeClassName = "is-active" to = "/about">About</Link>
             </NavItem>
             <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">Login</NavLink>
+              <Link href="https://github.com/reactstrap/reactstrap">Login</Link>
             </NavItem>
             <NavItem>
-              <NavLink href="google.com">Google</NavLink>
+              <Link href="google.com">Google</Link>
             </NavItem>
             <NavItem>
-              <NavLink href="/components/">Click here</NavLink>
+              <Link href="/components">Click here</Link>
             </NavItem>
             
             <NavItem>
-              <NavLink href= "/components/"> :) </NavLink> 
+              <Link href= "/components"> :) </Link> 
             </NavItem>
           </Nav>          
       </Navbar>

@@ -3,13 +3,13 @@ import './App.css';
 import AskQuestion from './AskQuestion.js'
 import SplashPage from './SplashPage.js'
 import NavBar from './NavBar.js'
+import About from './About.js'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { NavLink, BrowserRouter } from "react-router";
+import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 
 function App() {
   return (
-    <BrowserRouter>
     <div className="App">
       <NavBar/>
       <header className="App-header">
@@ -26,15 +26,14 @@ function App() {
           Learn React
         </a>
         <Switch>
-        <Route exact path="/about">
+        <Route path="/about">
           <About/>
         </Route>
         </Switch>
         <AskQuestion/>
         <SplashPage/>
       </header>
-    </div>`
-    </BrowserRouter>
+    </div>
   );
 }
 
