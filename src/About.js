@@ -5,7 +5,7 @@ import {
 
 } from 'reactstrap';
 
-
+// This will be where to make the "About" page
 class About extends React.Component {
     render() {
         return (
