@@ -1,0 +1,80 @@
+#main{
+    color: black;
+    padding-top: 70px;
+}
+
+img {
+    max-width: 70%;
+    height: auto;
+}
+
+#bottomBar{
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    background-color: #7F766B;
+    color: white;
+    height: 60px;
+}
+
+#feedback{
+    position: fixed;
+    left: 0px;
+    width: 100%;
+    bottom: 70px;
+    font-size: 25px;
+}
+
+#feedbackButton{
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+}
+#feedbackButton:hover{
+    background-color: #CF8E4C;
+}
+
+#children{
+    border-top: 500px;
+}
+
+/* button animation below adapted from W3Schools site*/
+.button {
+    display: inline-block;
+    border-radius: 40px;
+    background-color: #CF8E4C;
+    border: none;
+    color: black;
+    text-align: center;
+    font-size: 32px;
+    padding: 20px;
+    width: 300px;
+    transition: all 0.5s;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
