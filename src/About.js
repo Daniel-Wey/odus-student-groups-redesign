@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import './About.css'
+
 import {
     Row, Col, InputGroup, Input, Button, Form,
     ListGroup, ListGroupItem, Container, Modal, ModalHeader, ModalBody, ModalFooter,
@@ -9,7 +11,15 @@ import {
 class About extends React.Component {
     render() {
         return (
-            <p>About</p>
+            <div id="main">
+                 <div id="topBar">
+
+                 </div>
+
+                <div id="bottomBar"> 
+                <span>Made with love @Hoagie </span>
+                </div>
+            </div>
         )
     }
 
