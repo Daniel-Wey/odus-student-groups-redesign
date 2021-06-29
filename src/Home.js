@@ -25,7 +25,9 @@ class Home extends React.Component {
                     <span>Questions or concerns?</span>
                     <button id="feedbackButton"><b><u>Send us feedback!</u></b></button>
                 </div>
-                <div id="bottomBar"> </div>
+                <div id="bottomBar">
+                    <span class = "bottomText" >Made with love @Hoagie </span>
+                </div>
             </div>
         ) 
     }
