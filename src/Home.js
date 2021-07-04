@@ -25,6 +25,12 @@ class Home extends React.Component {
                     <span>Questions or concerns?</span>
                     <button id="feedbackButton"><b><u>Send us feedback!</u></b></button>
                 </div>
+                <br></br>
+
+                {/* temporary link below */}
+                <p><a href="itemLeft">temporary link to specific item page (left)</a></p>
+
+
                 <div id="bottomBar">
                     <span class = "bottomText" >Made with love @Hoagie </span>
                 </div>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import About from './About.js'
 import Home from './Home.js'
+import ItemLeft from './itemLeft.js'
 import {
     Row, Col, InputGroup, Input, Button, Form,
     ListGroup, ListGroupItem, Container, Modal, ModalHeader, ModalBody, ModalFooter,
@@ -13,6 +14,10 @@ class StartPage extends React.Component {
     render() {
         return (
             <Switch>
+                <Route path="/itemLeft">
+                    <ItemLeft/>
+                </Route>
+
                 <Route path="/about">
                     <About/>
                 </Route>
