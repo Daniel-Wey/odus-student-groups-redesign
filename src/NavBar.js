@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
+import './NavBarStyles.css'
 import {
   Collapse,
   Navbar,
@@ -19,9 +20,10 @@ class NavBar extends React.Component {
     render() {
         return (
             <div>
-      <Navbar color="light" light expand="md">
+     <Navbar color="dark" light expand="md">
         <NavbarBrand href="/">tigertrade</NavbarBrand>
-
+        <a href="https://github.com/reactstrap/reactstrap"> button </a>
+          <button id ="press"> Button </button>
           <Nav className="ml-auto" navbar>
             <NavItem>
               <Link to =  "/">Home</Link>
@@ -44,7 +46,7 @@ class NavBar extends React.Component {
             </NavItem>
           </Nav>          
       </Navbar>
-    </div>
+    </div> 
         )
     }
 }
