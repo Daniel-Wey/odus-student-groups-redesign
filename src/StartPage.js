@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import About from './About.js'
 import Home from './Home.js'
-//import ItemLeft from './itemLeft.js'
+import ItemLeft from './itemLeft.js'
 import ItemRight from './ItemRight.js'
 
 
@@ -30,6 +30,7 @@ class StartPage extends React.Component {
                     <About/>
                 </Route>
                 <Route exact path="/itemRight" component={withRouter(ItemRight)} />
+                <Route exact path="/itemLeft" component={withRouter(ItemLeft)} />
                 <Route path = "/">
                     <Home/>
                 </Route>
