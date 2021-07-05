@@ -30,6 +30,8 @@ class Home extends React.Component {
                 {/* temporary link below */}
                 <p><a href="itemLeft">temporary link to specific item page (left)</a></p>
 
+                {/* temporary link below */}
+                <p><a href="itemRight">temporary link to specific item page (right)</a></p>
 
                 <div id="bottomBar">
                     <span class = "bottomText" >Made with love @Hoagie </span>
