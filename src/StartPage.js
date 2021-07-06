@@ -18,14 +18,6 @@ class StartPage extends React.Component {
     render() {
         return (
             <Switch>
-                {/*<Route path="/itemLeft">
-                    <ItemLeft/>
-                </Route>*/}
-
-                {/*<Route path="/itemRight">
-                    <ItemRight/>
-            </Route>*/}
-
                 <Route path="/about">
                     <About/>
                 </Route>

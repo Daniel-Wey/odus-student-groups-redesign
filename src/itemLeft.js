@@ -5,7 +5,7 @@ import plush1 from './images/plush1.jpg'
 import plush2 from './images/plush2.jpeg'
 import plush3 from './images/plush3.jpeg'
 import avatar from './images/avatar.png'
-import rating from './images/tempRating.png'
+//import rating from './images/tempRating.png'
 
 
 // Replace with local path, ensurre that "./" is at the beginning if sourced from same directory
@@ -47,7 +47,7 @@ class itemLeft extends React.Component {
                     <div id="userStars">
                         <span id="username">Listing by PrincetonStudent00263</span>
                         <br></br>
-                        <img id="rate" src={rating} alt="sample"/>
+                        {/*<img id="rate" src={rating} alt="sample"/>*/}
                     </div>
                     <button id="ask"><span>Ask the Seller<br></br> a Question</span></button>
                 </div>
