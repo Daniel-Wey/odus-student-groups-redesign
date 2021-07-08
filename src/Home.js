@@ -12,7 +12,7 @@ import {
 class Home extends React.Component {
     render() {
         return (
-            <div id="main">
+            <div id="Home-main">
                 
                 <img src={logo} alt="Tiger Trade logo"/>
                 <br></br><br></br><br></br>
@@ -27,11 +27,11 @@ class Home extends React.Component {
                 </div>
                 <br></br>
 
-                {/* temporary link below */}
+                {/* temporary link below 
                 <p><a href="itemLeft">temporary link to specific item page (left)</a></p>
+                <p><a href="itemRight">temporary link to specific item page (right)</a></p>*/}
+                <p><a href="itemPage">temporary link to specific item page (merge)</a></p>
 
-                {/* temporary link below */}
-                <p><a href="itemRight">temporary link to specific item page (right)</a></p>
 
                 <div id="bottomBar">
                     <span class = "bottomText" >Made with love @Hoagie </span>

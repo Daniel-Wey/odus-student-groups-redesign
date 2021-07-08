@@ -9,9 +9,6 @@
 }
 
 #left{
-    border-color: rgb(184, 183, 183);
-    border-style: dashed;
-    border-width: 1px;
     position: fixed;
     left: 0px;
     width: 50%;
