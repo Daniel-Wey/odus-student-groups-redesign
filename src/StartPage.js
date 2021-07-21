@@ -27,9 +27,9 @@ class StartPage extends React.Component {
                 
                 <Route exact path="/itemPage" component={withRouter(ItemPage)} />
                 <Route exact path="/landingPageBottom" component={withRouter(LandingPageBottom)} />
-        
+                {/*<Route exact path="/carousel" component={withRouter(Carousel)} />*/}
                 <Route path = "/">
-                    {/*<Route exact path="/carousel" component={withRouter(Carousel)} />*/}
+                    
                     <Home/>
                 </Route>
 
