@@ -1,0 +1,10 @@
+#listings{
+   position: fixed;
+  bottom: 425px;
+  left: 50px;
+  width: 200px;
+  font-size: 30px;
+  
+}
+
+hr {clear: both;}

@@ -7,11 +7,15 @@ import {
 
 } from 'reactstrap';
 
+//import Divider from 'react-native-elements';
+
 class LandingPageBottom extends React.Component {
     render() {
         return (
             <div>
-
+                 <hr  />
+                <span id = "listings"> All listings</span>
+               
             </div>
         )
     }
