@@ -4,6 +4,7 @@ import Home from './Home.js'
 import ItemLeft from './itemLeft.js'
 import ItemRight from './ItemRight.js'
 import ItemPage from './itemPage.js'
+import LandingPageBottom from './LandingPageBottom.js'
 
 
 import {
@@ -24,7 +25,7 @@ class StartPage extends React.Component {
                 <Route exact path="/itemRight" component={withRouter(ItemRight)} />
                 <Route exact path="/itemLeft" component={withRouter(ItemLeft)} />
                 <Route exact path="/itemPage" component={withRouter(ItemPage)} />
-
+                <Route exact path="/landingPageBottom" component={withRouter(LandingPageBottom)} />
                 <Route path = "/">
                     <Home/>
                 </Route>

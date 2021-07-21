@@ -31,7 +31,7 @@ class Home extends React.Component {
                 <p><a href="itemLeft">temporary link to specific item page (left)</a></p>
                 <p><a href="itemRight">temporary link to specific item page (right)</a></p>*/}
                 <p><a href="itemPage">temporary link to specific item page (merge)</a></p>
-
+                <p><a href="landingPageBottom">temporary link to landing page bottom</a></p>
 
                 <div id="bottomBar">
                     <span class = "bottomText" >Made with love @Hoagie </span>
