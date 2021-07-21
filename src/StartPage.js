@@ -4,12 +4,8 @@ import Home from './Home.js'
 import ItemLeft from './itemLeft.js'
 import ItemRight from './ItemRight.js'
 import ItemPage from './itemPage.js'
-<<<<<<< HEAD
-import LandingPageBottom from './LandingPageBottom.js'
-=======
 import Carousel from './carousel.js'
->>>>>>> f504497f797f892229eefe7c4f1aff93887f94fa
-
+import LandingPageBottom from './LandingPageBottom.js'
 
 import {
     Row, Col, InputGroup, Input, Button, Form,
