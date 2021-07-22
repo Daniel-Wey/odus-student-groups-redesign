@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './itemLeftstyles.css'
+import './Styles/itemLeftstyles.css'
 
 import plush1 from './images/plush1.jpg'
 import plush2 from './images/plush2.jpeg'

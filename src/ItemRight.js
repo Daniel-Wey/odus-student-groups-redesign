@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './ItemRightStyle.css'
+import './Styles/ItemRightStyle.css'
 import { IoInformationCircleOutline } from "react-icons/io5";
 import info from './images/info.jpg'
 

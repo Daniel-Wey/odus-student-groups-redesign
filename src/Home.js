@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './homeStyle.css'
+import './Styles/homeStyle.css'
 
 // Replace with local path, ensurre that "./" is at the beginning if sourced from same directory
 import logo from './images/tigertradelogo.png'
@@ -34,6 +34,8 @@ class Home extends React.Component {
                 <p><a href="carousel">temporary link to carousel</a></p>
                 <p><a href="landingPageBottom">temporary link to landing page bottom</a></p>
                 <p><a href="landingPage">landing page merge</a></p>
+                <p><a href="sellingPage">selling page</a></p>
+
 
                
                 <div id="bottomBar">

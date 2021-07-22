@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from './logo.svg';
-import './App.css';
+import './Styles/App.css';
 import AskQuestion from './AskQuestion.js'
 import NavBar from './NavBar.js'
 import StartPage from './StartPage.js'

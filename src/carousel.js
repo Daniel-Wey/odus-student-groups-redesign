@@ -5,7 +5,7 @@ npm install --save styled-components
 
 import React from "react";
 import Carousel from "react-elastic-carousel";
-import './carousel.css';
+import './Styles/carousel.css';
 import Card from './card.js'
 
 import plush1 from './images/plush1.jpg'

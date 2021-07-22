@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './LandingPageBottomStyle.css'
+import './Styles/LandingPageBottomStyle.css'
 
 import {
     Row, Col, InputGroup, Input, Button, Form,

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './aboutStyle.css'
+import './Styles/aboutStyle.css'
 
 import avatar from './images/avatar.png'
 import {
