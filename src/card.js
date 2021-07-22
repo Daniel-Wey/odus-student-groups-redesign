@@ -1,6 +1,6 @@
 import React from "react";
 import './carousel.css';
 
-const card = ({img}) => <div id="card"><img src={img} alt='item'></img></div>
+const card = ({img}) => <div id="card"><div id="image"><img src={img} alt='item'></img></div></div>
 
 export default card;
