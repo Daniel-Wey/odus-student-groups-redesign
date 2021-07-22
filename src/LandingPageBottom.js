@@ -13,8 +13,22 @@ class LandingPageBottom extends React.Component {
     render() {
         return (
             <div>
-                 <hr  />
+                <div>
                 <span id = "listings"> All listings</span>
+                </div>
+
+                <div id= "itemList"> 
+                    <div id="item1"></div>
+                    <span id="name1"> Item Name</span>
+                    <span id="amt1"> $$</span>
+                    <div id="item2"></div>
+                    <div id="item3"></div>
+                    <div id="item4"></div>
+                    <div id="item5"></div>
+                    <div id="item6"></div>
+                    <div id="item7"></div>
+                    <div id="item8"></div>
+                </div>
                
             </div>
         )
