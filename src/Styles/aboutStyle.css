@@ -1,0 +1,98 @@
+#bottomBar{
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    background-color: #7F766B;
+    color: white;
+    height: 60px;
+}
+
+#main{
+    height: 100%;
+    overflow-y: hidden;
+}
+.bottomText{
+    position: fixed;
+    left: 39.5%;
+    top: 93%;
+    color: white;
+}
+
+#topBar{
+    position: fixed;
+    width: 100%;
+    top: 60px;
+    left: 0px;
+    background-color: #CF8E4C;
+    color: white;
+    height: 120px;
+   
+}
+
+.topTextTitle{
+    position: fixed;
+    left: 42%;
+    top: 10%;
+}
+
+.topTextDescription{
+    position: fixed;
+    left: 22%;
+    top: 15%;
+}
+
+#middle{
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 25%);
+    width: 100%;
+    
+}
+
+#profile1{
+    vertical-align:center;
+    display: inline-block;
+    text-align: center;
+    height:100%;
+    width: 350px;
+   
+   
+}
+#profile2{
+    vertical-align:center;
+    display: inline-block;
+    text-align: center;
+    height:100%;
+    width: 350px;
+   
+   
+}
+#profile3{
+    vertical-align:center;
+    display: inline-block;
+    text-align: center;
+    height:100%;
+    width: 350px;
+    
+   
+   
+}
+#image1{
+    border-radius:50%;
+   
+}
+#image2{
+    border-radius:50%;
+}
+#image3{
+    border-radius:50%;
+}
+.caption{
+    display: block;
+}
+.bio{
+    block-size: 150px;
+
+    display: block;
+}
