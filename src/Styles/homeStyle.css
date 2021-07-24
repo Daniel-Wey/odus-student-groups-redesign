@@ -78,3 +78,15 @@ img {
     opacity: 1;
     right: 0;
   }
+
+  .temp{
+    font-size: 20px;
+    color:#CF8E4C;
+  }
+
+  .temp:hover {
+    color: white;
+    background-color: #CF8E4C;
+    border-radius: 5px;
+  }
+  
