@@ -1,17 +1,21 @@
 import React, { Component } from 'react'
-import {TextInput, TextInputField, TextareaField, Textarea, Positioner, Filepicker, FilePicker, TagInput} from 'evergreen-ui'
+import {TextInputField, TextareaField, Textarea, Positioner, Filepicker, FilePicker, TagInput} from 'evergreen-ui'
 
 class SellingPage extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            values: ['Kauri', 'Willow']
+            values: ['Example', 'Tags!']
         }
+    }
+
+    setValues(input){
+        this.setState({
+            values: input
+        });
     }
     
     render() {
-        //const [values, setValues] = React.useState(['Kauri', 'Willow'])
-
         return (
             <div>
                 <TextInputField
@@ -30,15 +34,17 @@ class SellingPage extends React.Component {
                 <FilePicker
                 placeholder="Textarea placeholder..." 
                 />
-                {/*
+                
                 <TagInput
-                    inputProps={{ placeholder: 'Add trees...' }}
-                    values={values}
+                    inputProps={{ placeholder: 'Add tags!' }}
+                    values={this.state.values}
                     onChange={values => {
-                        setValues(values)
+                        this.setValues(values)
                     }}
                 />
-                */}
+
+                
+                
             </div>
         )
     }
