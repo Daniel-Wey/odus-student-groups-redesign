@@ -19,20 +19,22 @@
     display: flex;
 }
 
-#name1{
-    text-align:center; 
-    position: fixed;
-    top: 550px;
-    left:160px;
+
+
+.name{
+    position: absolute;
+    top: 100%;
+    left:35%;
     font-size:15px; 
 }
-#amt1{
-    text-align:center; 
-    position: fixed;
-    top: 570px;
-    left:190px;
+.amt{
+    position: absolute;
+    top: 110%;
+    left:48%;
     font-size:15px; 
 }
+
+
 #item1{
     width:200px;
     height:200px; 
