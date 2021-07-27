@@ -6,11 +6,8 @@ npm install --save styled-components
 import React from "react";
 import Carousel from "react-elastic-carousel";
 import './Styles/carousel.css';
-import Card from './card.js'
-
-import plush1 from './images/plush1.jpg'
-import plush2 from './images/plush2.jpeg'
-import plush3 from './images/plush3.jpeg'
+import Card from './card.js';
+import Bottom from "./LandingPageBottom.js"
 
 
 class carousel extends React.Component {
