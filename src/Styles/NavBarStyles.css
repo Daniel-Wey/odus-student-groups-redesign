@@ -1,4 +1,4 @@
-#press{
+/*#press{
     background: none;
 	color: inherit;
 	border: none;
@@ -10,4 +10,21 @@
 
 .a{
     color: hotpink;
+}*/
+
+.navbar-bar{
+    color: white;
+    background-color: rgb(75, 75, 75);
+    position: fixed;
+    overflow-y: scroll;
+}
+
+.navbar-item{
+    margin-left: 25px;
+    color: orange;
+    background-color: rgb(75, 75, 75);
+}
+
+.navbar-item:hover{
+    color:rgba(255, 166, 0, 0.74);
 }

@@ -22,8 +22,6 @@ class NavBar extends React.Component {
             <div>
      <Navbar color="dark" light expand="md">
         <NavbarBrand href="/">tigertrade</NavbarBrand>
-        <a href="https://github.com/reactstrap/reactstrap"> button </a>
-          <button id ="press"> Button </button>
           <Nav className="ml-auto" navbar>
             <NavItem>
               <Link to =  "/">Home</Link>

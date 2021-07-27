@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './Styles/LandingPageBottomStyle.css'
+import Tile from "./Tile.js"
 
 import {
     Row, Col, InputGroup, Input, Button, Form,
@@ -18,6 +19,9 @@ class LandingPageBottom extends React.Component {
                 </div>
 
                 <div id= "itemList"> 
+                    <Tile productUrl = {"https://i.ebayimg.com/images/g/pUEAAOSwNjJdgndO/s-l300.jpg"} alt = {"Princeton mug"} name = {"Princeton mug"} price = {50} />
+                   <Tile productUrl = {"https://i.ebayimg.com/images/g/pUEAAOSwNjJdgndO/s-l300.jpg"} alt = {"Princeton mug"} name = {"Princeton mug"} price = {10} />
+                    {/* 
                     <div id="item1">
                     <span class="name"> Item Name</span>
                     <span class="amt"> $$</span>
@@ -56,6 +60,7 @@ class LandingPageBottom extends React.Component {
                     <span class="name"> Item Name</span>
                     <span class="amt"> $$</span>
                     </div>
+                    */}
                 </div>
                
             </div>

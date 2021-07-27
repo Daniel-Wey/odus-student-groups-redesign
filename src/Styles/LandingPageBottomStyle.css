@@ -1,5 +1,5 @@
 #listings{
- position: fixed;
+  position: fixed;
   bottom: 625px;
   left: 50px;
   width: 200px;
@@ -13,6 +13,7 @@
     position: fixed;
     top: 340px;
     left: 80px;
+    
     width: 1300px;
     height: 100%; 
     overflow-y:auto;
@@ -39,9 +40,11 @@
     width:200px;
     height:200px; 
     background-color: gray;
-    position: fixed;
+/*    position: fixed;
+
     top: 350px;
     left:100px;
+*/
     border-radius:10px;
    
 }
