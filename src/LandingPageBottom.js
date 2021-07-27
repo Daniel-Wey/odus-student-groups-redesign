@@ -39,10 +39,23 @@ class LandingPageBottom extends React.Component {
                     <span class="name"> Item Name</span>
                     <span class="amt"> $$</span>
                     </div>
-                    <div id="item5"></div>
-                    <div id="item6"></div>
-                    <div id="item7"></div>
-                    <div id="item8"></div>
+                    <div id="item5">
+                    <span class="name"> Item Name</span>
+                    <span class="amt"> $$</span>
+                    </div>
+
+                    <div id="item6">
+                    <span class="name"> Item Name</span>
+                    <span class="amt"> $$</span>
+                    </div>
+                    <div id="item7">
+                    <span class="name"> Item Name</span>
+                    <span class="amt"> $$</span>
+                    </div>
+                    <div id="item8">
+                    <span class="name"> Item Name</span>
+                    <span class="amt"> $$</span>
+                    </div>
                 </div>
                
             </div>
