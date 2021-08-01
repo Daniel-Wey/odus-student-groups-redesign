@@ -5,9 +5,6 @@ import {
 } from 'evergreen-ui'
 
 class SellingForm extends React.Component {
-    constructor(props){
-        super(props);
-    }
     render() {
         return (
             <div>
