@@ -9,125 +9,45 @@
 
 #itemList{
     
-   
     position: fixed;
     top: 340px;
     left: 80px;
     
-    width: 1300px;
+    width: 90%;
     height: 100%; 
-    overflow-y:auto;
+    
+
+}
+
+#firstRow{
     display: flex;
+    justify-content: space-between;
+    
 }
 
-
-
-.name{
-    position: absolute;
-    top: 100%;
-    left:35%;
-    font-size:15px; 
-}
-.amt{
-    position: absolute;
-    top: 110%;
-    left:48%;
-    font-size:15px; 
+#secRow{
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
 }
 
+#thirdRow{
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+}
 
-#item1{
-    width:200px;
+#fourthRow{
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#listingImage{
+
+    min-width:200px;
     height:200px; 
-    background-color: gray;
-/*    position: fixed;
-
-    top: 350px;
-    left:100px;
-*/
     border-radius:10px;
-   
-}
-
-#item2{
-    width:200px;
-    height:200px;
-    background-color: gray;
-    position: fixed;
-    top: 350px;
-    left:400px;
-    border-radius:10px;
-   
-}
-
-#item3{
-    width:200px;
-    height:200px; 
-    background-color: gray;
-    position: fixed;
-    top: 350px;
-    left:700px;
-    border-radius:10px;
-   
-}
-
-#item4{
-
-    width:200px;
-    height:200px; 
-    background-color: gray;
-    position: fixed;
-    top: 350px;
-    left:1000px;
-    border-radius:10px;
-
-}
-
-#item5{
-
-    width:200px;
-    height:200px; 
-    background-color: gray;
-    position: fixed;
-    top: 600px;
-    left:100px;
-    border-radius:10px;
-
 }
 
 
-#item6{
-
-    width:200px;
-    height:200px; 
-    background-color: gray;
-    position: fixed;
-    top: 600px;
-    left:400px;
-    border-radius:10px;
-
-}
-
-#item7{
-
-    width:200px;
-    height:200px; 
-    background-color: gray;
-    position: fixed;
-    top: 600px;
-    left:700px;
-    border-radius:10px;
-
-}
-
-#item8{
-
-    width:200px;
-    height:200px; 
-    background-color: gray;
-    position: fixed;
-    top: 600px;
-    left:1000px;
-    border-radius:10px;
-
-}

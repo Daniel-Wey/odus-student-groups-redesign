@@ -1,0 +1,17 @@
+#item1{
+    position: relative; 
+}
+
+.name{
+    position: absolute;
+    top: 100%;
+    left:20%;
+    
+    font-size:15px; 
+}
+.amt{
+    position: absolute;
+    top: 110%;
+    left:40%;
+    font-size:15px; 
+}

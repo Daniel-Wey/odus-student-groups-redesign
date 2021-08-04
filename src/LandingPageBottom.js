@@ -19,8 +19,46 @@ class LandingPageBottom extends React.Component {
                 </div>
 
                 <div id= "itemList"> 
-                    <Tile productUrl = {"https://i.ebayimg.com/images/g/pUEAAOSwNjJdgndO/s-l300.jpg"} alt = {"Princeton mug"} name = {"Princeton mug"} price = {50} />
-                   <Tile productUrl = {"https://i.ebayimg.com/images/g/pUEAAOSwNjJdgndO/s-l300.jpg"} alt = {"Princeton mug"} name = {"Princeton mug"} price = {10} />
+                    <div id = "firstRow">
+                    <Tile id ="product1" productUrl = {"https://i.ebayimg.com/images/g/pUEAAOSwNjJdgndO/s-l300.jpg"} alt = {"Princeton mug"} name = {"Princeton mug"} amt = {50} />
+                    <Tile id ="product2" productUrl = {"https://i.ebayimg.com/images/g/pUEAAOSwNjJdgndO/s-l300.jpg"} alt = {"Princeton mug"} name = {"Princeton mug"} amt = {50} />
+                    <Tile id ="product3" productUrl = {"https://i.ebayimg.com/images/g/pUEAAOSwNjJdgndO/s-l300.jpg"} alt = {"Princeton mug"} name = {"Princeton mug"} amt = {50} />
+                    <Tile id ="product4" productUrl = {"https://i.ebayimg.com/images/g/pUEAAOSwNjJdgndO/s-l300.jpg"} alt = {"Princeton mug"} name = {"Princeton mug"} amt = {50} />
+                    <Tile id ="product5" productUrl = {"https://i.ebayimg.com/images/g/pUEAAOSwNjJdgndO/s-l300.jpg"} alt = {"Princeton mug"} name = {"Princeton mug"} amt = {50} />
+                    </div>
+                    
+                    <div id = "secRow">
+                    <Tile id ="product1" productUrl = {"https://i.ebayimg.com/images/g/pUEAAOSwNjJdgndO/s-l300.jpg"} alt = {"Princeton mug"} name = {"Princeton mug"} amt = {50} />
+                    <Tile id ="product2" productUrl = {"https://i.ebayimg.com/images/g/pUEAAOSwNjJdgndO/s-l300.jpg"} alt = {"Princeton mug"} name = {"Princeton mug"} amt = {50} />
+                    <Tile id ="product3" productUrl = {"https://i.ebayimg.com/images/g/pUEAAOSwNjJdgndO/s-l300.jpg"} alt = {"Princeton mug"} name = {"Princeton mug"} amt = {50} />
+                    <Tile id ="product4" productUrl = {"https://i.ebayimg.com/images/g/pUEAAOSwNjJdgndO/s-l300.jpg"} alt = {"Princeton mug"} name = {"Princeton mug"} amt = {50} />
+                    <Tile id ="product5" productUrl = {"https://i.ebayimg.com/images/g/pUEAAOSwNjJdgndO/s-l300.jpg"} alt = {"Princeton mug"} name = {"Princeton mug"} amt = {50} />
+
+                    
+                    </div>
+                    {/*
+                    <div id = "thirdRow">
+                    <Tile id ="product1" productUrl = {"https://i.ebayimg.com/images/g/pUEAAOSwNjJdgndO/s-l300.jpg"} alt = {"Princeton mug"} name = {"Princeton mug"} amt = {50} />
+                    <Tile id ="product2" productUrl = {"https://i.ebayimg.com/images/g/pUEAAOSwNjJdgndO/s-l300.jpg"} alt = {"Princeton mug"} name = {"Princeton mug"} amt = {50} />
+                    <Tile id ="product3" productUrl = {"https://i.ebayimg.com/images/g/pUEAAOSwNjJdgndO/s-l300.jpg"} alt = {"Princeton mug"} name = {"Princeton mug"} amt = {50} />
+                    <Tile id ="product4" productUrl = {"https://i.ebayimg.com/images/g/pUEAAOSwNjJdgndO/s-l300.jpg"} alt = {"Princeton mug"} name = {"Princeton mug"} amt = {50} />
+                    <Tile id ="product5" productUrl = {"https://i.ebayimg.com/images/g/pUEAAOSwNjJdgndO/s-l300.jpg"} alt = {"Princeton mug"} name = {"Princeton mug"} amt = {50} />
+
+
+                    </div>
+
+                    <div id = "fourthRow">
+                    <Tile id ="product1" productUrl = {"https://i.ebayimg.com/images/g/pUEAAOSwNjJdgndO/s-l300.jpg"} alt = {"Princeton mug"} name = {"Princeton mug"} amt = {50} />
+                    <Tile id ="product2" productUrl = {"https://i.ebayimg.com/images/g/pUEAAOSwNjJdgndO/s-l300.jpg"} alt = {"Princeton mug"} name = {"Princeton mug"} amt = {50} />
+                    <Tile id ="product3" productUrl = {"https://i.ebayimg.com/images/g/pUEAAOSwNjJdgndO/s-l300.jpg"} alt = {"Princeton mug"} name = {"Princeton mug"} amt = {50} />
+                    <Tile id ="product4" productUrl = {"https://i.ebayimg.com/images/g/pUEAAOSwNjJdgndO/s-l300.jpg"} alt = {"Princeton mug"} name = {"Princeton mug"} amt = {50} />
+                    <Tile id ="product5" productUrl = {"https://i.ebayimg.com/images/g/pUEAAOSwNjJdgndO/s-l300.jpg"} alt = {"Princeton mug"} name = {"Princeton mug"} amt = {50} />
+
+
+                    </div>
+                
+                    
+                    */}                    
                     {/* 
                     <div id="item1">
                     <span class="name"> Item Name</span>
