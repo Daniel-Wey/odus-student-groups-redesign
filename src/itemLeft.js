@@ -5,59 +5,96 @@ import plush1 from './images/plush1.jpg'
 import plush2 from './images/plush2.jpeg'
 import plush3 from './images/plush3.jpeg'
 import avatar from './images/avatar.png'
-//import rating from './images/tempRating.png'
 
 
-// Replace with local path, ensurre that "./" is at the beginning if sourced from same directory
 import {
-    Row, Col, InputGroup, Input, Button, Form,
-    ListGroup, ListGroupItem, Container, Modal, ModalHeader, ModalBody, ModalFooter,
+    Avatar, Popover, Pane, TextInput, Button, TextareaField, CornerDialog
+} from 'evergreen-ui'
 
-} from 'reactstrap';
+// placeholder for no image
+// https://www.google.com/url?sa=i&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ANo-Image-Placeholder.svg&psig=AOvVaw1EkSCfst21V43WsKXKzQWe&ust=1628456487633000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCOieuqfnn_ICFQAAAAAdAAAAABAD
+
 
 class itemLeft extends React.Component {
+
+
     render() {
         return (
             <div id="left">
 
-                <div id="images">   
+                <div id="images">
                     <div id="smallImages">
                         <div class="sideImg" id="img1">
-                            <img src={plush1} alt="sample"/>
+                            <img src={plush1} alt="sample" />
                         </div>
                         <br></br>
                         <div class="sideImg" id="img2">
-                            <img src={plush2} alt="sample"/>
+                            <img src={plush2} alt="sample" />
                         </div>
                         <br></br>
                         <div class="sideImg" id="img3">
-                            <img src={plush3} alt="sample"/>
+                            <img src={plush3} alt="sample" />
                         </div>
                     </div>
 
                     <div id="mainImage">
-                    <div id="img1Main">
-                            <img src={plush1} alt="sample"/>
+                        <div id="img1Main">
+                            <img src={plush1} alt="sample" />
                         </div>
                     </div>
                 </div>
 
                 <div id="ratings">
-                    <img id="avatar" src={avatar} alt="avatar"/>
+                    <Avatar
+                        name={this.props.sellerName}
+                        src={this.props.sellerImage}
+                        size={80} marginRight={16} />
+
                     <div id="userStars">
-                        <span id="username">Listing by PrincetonStudent00263</span>
-                        <br></br>
+                        <span id="username">Listing by {this.props.sellerName}</span>
+
                         {/*<img id="rate" src={rating} alt="sample"/>*/}
                     </div>
-                    <button id="ask"><span>Ask the Seller<br></br> a Question</span></button>
+                    <Popover
+                        bringFocusInside
+                        content={({ close }) => (
+                            <Pane
+                                width={320}
+                                height={320}
+                                paddingX={40}
+                                display="flex"
+                                alignItems="center"
+                                justifyContent="center"
+                                flexDirection="column"
+                            >
+                                <span>Enter your question for the seller</span>
+                                <TextareaField
+                                    description="Pull down at the lower right of the textbox to adjust your view"
+                                    name="textarea-1"
+                                    placeholder="Enter text here"
+                                />
+                                <br></br>
+                                <Button onClick={close}>Close</Button>
+                            </Pane>
+                        )}
+                    >
+
+                        <Button
+                            width={150}
+                            height={80}
+                            background="#D1CACA"
+                            borderRadius={15}
+                        ><b>Ask the seller<br></br>a question</b></Button>
+                    </Popover>
                 </div>
 
+
                 <div id="bottomBar">
-                    <span class = "bottomText" >Made with love @Hoagie </span>
+                    <span class="bottomText" >Made with love @Hoagie </span>
                 </div>
 
             </div>
-        ) 
+        )
     }
 }
 

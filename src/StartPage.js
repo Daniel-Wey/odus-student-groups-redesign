@@ -10,6 +10,7 @@ import LandingPage from './LandingPage.js'
 import SellingPage from './SellingPage.js'
 
 
+
 import {
     Row, Col, InputGroup, Input, Button, Form,
     ListGroup, ListGroupItem, Container, Modal, ModalHeader, ModalBody, ModalFooter,
@@ -25,14 +26,17 @@ class StartPage extends React.Component {
                 <Route path="/about">
                     <About/>
                 </Route>
-                <Route exact path="/itemRight" component={withRouter(ItemRight)} />
-                <Route exact path="/itemLeft" component={withRouter(ItemLeft)} />
+
                 
                 <Route exact path="/itemPage" component={withRouter(ItemPage)} />
           {/*}      <Route exact path="/landingPageBottom" component={withRouter(LandingPageBottom)} />
-                <Route exact path="/carousel" component={withRouter(Carousel)} /> */}
+                <Route exact path="/carousel" component={withRouter(Carousel)} /> 
+                <Route exact path="/itemRight" component={withRouter(ItemRight)} />
+                <Route exact path="/itemLeft" component={withRouter(ItemLeft)} />*/}
                 <Route exact path="/landingPage" component={withRouter(LandingPage)} /> 
                 <Route exact path="/sellingPage" component={withRouter(SellingPage)} />
+
+
 
                 <Route path = "/">
                     

@@ -4,12 +4,29 @@ import './Styles/homeStyle.css'
 // Replace with local path, ensurre that "./" is at the beginning if sourced from same directory
 import logo from './images/tigertradelogo.png'
 import {
-    Row, Col, InputGroup, Input, Button, Form,
-    ListGroup, ListGroupItem, Container, Modal, ModalHeader, ModalBody, ModalFooter,
+    Row, Col, InputGroup, Input, Form,
+    ListGroup, ListGroupItem, Container, Modal, ModalHeader, ModalBody, ModalFooter, 
 
 } from 'reactstrap';
 
+import {
+    Avatar, Popover, Pane, TextInput, Button, TextareaField, CornerDialog
+} from 'evergreen-ui'
+
 class Home extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            isShown: false
+        }
+    }
+
+    setIsShown(input){
+        this.setState({
+            isShown: input
+        });
+    }
     render() {
         return (
             <div id="Home-main">
@@ -23,7 +40,24 @@ class Home extends React.Component {
 
                 <div id="feedback">
                     <span>Questions or concerns?</span>
-                    <button id="feedbackButton"><b><u>Send us feedback!</u></b></button>
+                   {/* <button id="feedbackButton"><b><u>Send us feedback!</u></b></button> */}
+                    <React.Fragment>
+                        <CornerDialog
+                            title="Send us feedback here!"
+                            isShown={this.state.isShown}
+                            onCloseComplete={() => this.setIsShown(false)}
+                        >
+                            <span>Enter your feedback for us below </span>
+                                <TextareaField
+                                    description="Pull down at the lower right of the textbox to adjust your view"
+                                    name="textarea-1"
+                                    placeholder="Enter text here"
+                                />
+                        </CornerDialog>
+                        <Button onClick={() => this.setIsShown(true)}>
+                            <b>Send us feedback!</b>
+                        </Button>
+                </React.Fragment>
                 </div>
                 <br></br>
 
@@ -37,7 +71,8 @@ class Home extends React.Component {
                 <span><a className="temp" href="sellingPage">selling page</a></span><br></br>
 
 
-               
+
+            
                 <div id="bottomBar">
                     <span class = "bottomText" >Made with love @Hoagie </span>
                 </div>
