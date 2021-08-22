@@ -20,7 +20,7 @@ export default function SellingPage() {
 
     return (
         <div style={{
-            display: 'block', width: 700, paddingLeft: 30, paddingTop: 50,
+            display: 'block', width: 700, paddingLeft: 30, paddingTop: 50, 
         }}>
 
             <h5>Select type of trade below</h5>
