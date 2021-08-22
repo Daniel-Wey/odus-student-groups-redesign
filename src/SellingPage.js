@@ -21,9 +21,9 @@ export default function SellingPage() {
         <div style={{
             display: 'block', width: 700, paddingLeft: 30, paddingTop: 50, 
         }}>
-
-
             <Pane height={120} background="white" borderRadius={20} paddingTop={20}>
+
+                {/* Top white box containing tabs */}
                 <h5>Select type of trade below</h5>
                 <Tablist marginBottom={20} >
                     {tabsHeading.map((tab, index) => (
@@ -37,6 +37,8 @@ export default function SellingPage() {
                     ))}
                 </Tablist>
                 <br></br>
+                
+                {/* Bottom white box containing form */}
                 <Pane padding={16} background="white" flex="1" borderRadius={20} >
                     {tabsContent.map((tab, index) => (
                         <Pane
