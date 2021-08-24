@@ -4,7 +4,7 @@ import plush3 from './images/plush3.jpeg'
 
 import RatingStars from './RatingStars';
 
-import {Button} from 'evergreen-ui'
+import {Button, Avatar} from 'evergreen-ui'
 
 
 const imgHeight = "100px"
@@ -13,9 +13,10 @@ const imgSpacing = "30px"
 
 function itemPage2() {
   return (
-    <div style={{background:"white", width:"1200px", borderRadius:"20px", marginTop:"20px", display:"flex", flexDirection:"column", alignItems:"flex-start", paddingTop:"40px", paddingBottom:"20px"}}>
+    <div style={{background:"white", width:"1200px", borderRadius:"20px", marginTop:"20px", display:"flex", flexDirection:"column", alignItems:"flex-start", paddingTop:"40px", paddingBottom:"20px", paddingLeft:"20px"}}>
         <div style={{display:"flex", flexDirection:"row", width:"100%"}}>
-            <div id="side-images" style={{background:"white", width:"15%", marginLeft:"20px", }}>
+            {/* Side Images */}
+            <div id="side-images" style={{width:"15%"}}>
                 <div>
                     <img style={{ height: imgHeight}} src={plush1} alt="sample" />
                 </div>
@@ -27,7 +28,8 @@ function itemPage2() {
                 </div>
             </div>
 
-            <div id="main-image" style={{background:"white", width:"40%", marginLeft:"20px", display:"flex", flexDirection:"row", alignItems:"center", justifyContent: "center"}}>
+            {/* Main Image */}
+            <div id="main-image" style={{width:"40%", marginLeft:"20px", display:"flex", flexDirection:"row", alignItems:"center", justifyContent: "center"}}>
                 <Button borderRadius={100} width={60} height={60} style={{boxShadow: "0px 8px 15px rgba(0, 0, 0, 0.1)", border:"none"}}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
@@ -43,12 +45,52 @@ function itemPage2() {
                 </Button>
             </div>
 
-            <div>
-
+            {/* Buying Info */}
+            <div style={{width:"40%", fontSize:"20px", display:"flex", flexDirection:"column", alignItems:"flex-start", marginLeft:"20px"}}>
+                <span style={{fontSize:"40px"}}><b>Tiger Plushie</b></span>
+                <br></br>
+                <span style={{fontSize:"30px"}}>$15</span>
+                <br></br>
+                <div>
+                    <Button backgroundColor="#DE7548" color="white" borderRadius={10} fontSize={20} padding={20}>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cash-stack" viewBox="0 0 16 16">
+                            <path d="M1 3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1H1zm7 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
+                            <path d="M0 5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V5zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V7a2 2 0 0 1-2-2H3z"/>
+                        </svg>
+                        &ensp;Request to Buy
+                    </Button>
+                    <span>&emsp;&emsp;</span>
+                    <Button borderColor="#DE7548" color="#DE7548" borderRadius={10} fontSize={20} padding={20}>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-right-text" viewBox="0 0 16 16">
+                            <path d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1H2zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12z"/>
+                            <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+                        </svg>
+                        &ensp;Ask a Question
+                    </Button>
+                </div>
+                <br></br>
+                <span><b>Description: </b>Soft and like new. Hand-sized plushie.</span>
+                <br></br>
+                <span><b>Type of Trade: </b>Selling &emsp;&emsp; <b>Delivery: </b> Pickup</span>
             </div>
         </div>
-        <span>Test</span>
-        <RatingStars sellerRating={6}/>
+
+        {/* Seller info */}
+        <div style={{display:"flex", alignItems:"center", justifyContent:"center", marginTop:"20px"}}>
+            
+                <span><b>Seller Info:&emsp;</b></span>
+                <Avatar
+                    name="Test Student"        
+                    size={40} marginRight={16} />
+                <span style={{fontSize:"20px"}}>Test Student</span>
+        </div>
+        <div style={{fontSize:"20px", display:"flex", flexDirection:"row"}}>
+                <span>Average Rating: &nbsp;</span>
+                <RatingStars sellerRating={4.2}/>
+                <span>(4.2)&emsp;&emsp;&emsp;</span>
+                <span>Items sold: 15&emsp;&emsp;&emsp;&emsp;Trades made: 4&emsp;&emsp;&emsp;&emsp;Pickup location: Blair Hall</span>
+            
+        </div>
 
     </div>
   );

@@ -43,20 +43,20 @@ class RatingStars extends React.Component {
     render() {
         return (
             <div>
-                {this.setStars(5)}
-        {this.stars}
+{/*}                {this.setStars(5)}
+        {this.stars} */}
 
 
             <svg width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"> <path d={this.filledStar}/> </svg>
             <svg width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"> <path d={this.filledStar}/> </svg>
             <svg width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"> <path d={this.filledStar}/> </svg>
             <svg width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"> <path d={this.filledStar}/> </svg>
-                <svg width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16"> <path d={this.emptyStar}/> </svg>
+            <svg width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16"> <path d={this.emptyStar}/> </svg>
                 
-                
+                {/**
                 <br></br>
                 <svg width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"> <path d={this.filledStar}/> </svg>
-                <svg width="16" height="16" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16"> <path d={this.halfStar}/> </svg>
+                <svg width="16" height="16" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16"> <path d={this.halfStar}/> </svg> */}
             </div>
         )
     }
