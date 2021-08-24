@@ -1,6 +1,6 @@
 import { majorScale, Pane } from "evergreen-ui"
 import { ComponentType } from "react"
-import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 interface NavProps {
     /** the name of the hoagie project */
@@ -23,7 +23,7 @@ const Nav = ({name, logoComponent}:NavProps) => {
                     paddingX={20}
                     fontSize={25}
                 >
-                    <Link to="/">
+                    <Link style={{color: "black"}} to="/">
                         <Pane cursor="pointer">
                             {logoComponent ? logoComponent : <Pane>hoagie<b>{name}</b></Pane>}
                         </Pane>
