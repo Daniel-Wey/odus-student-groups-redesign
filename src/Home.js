@@ -22,6 +22,7 @@ class Home extends React.Component {
         }
     }
 
+
     setIsShown(input){
         this.setState({
             isShown: input
@@ -37,7 +38,6 @@ class Home extends React.Component {
                 <br></br><br></br><br></br>
 
                 <button class="button" id="loginButton"><span><b>LOG IN!</b></span></button>
-
                 <div id="feedback">
                     <span>Questions or concerns?</span>
                    {/* <button id="feedbackButton"><b><u>Send us feedback!</u></b></button> */}
@@ -65,6 +65,8 @@ class Home extends React.Component {
                 <p><a href="itemLeft">temporary link to specific item page (left)</a></p>
                 <p><a href="itemRight">temporary link to specific item page (right)</a></p>*/}
                 <span><a className="temp" href="itemPage">Item page</a></span><br></br>
+                <span><a className="temp" href="itemPage2">Item page v2</a></span><br></br>
+
            {/*     <span><a className="temp" href="carousel">link to carousel</a></span><br></br>
                 <span><a className="temp" href="landingPageBottom">link to landing page bottom</a></span><br></br> */}
             <span><a className="temp" href="landingPage">landing page merge</a></span><br></br>
