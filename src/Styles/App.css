@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
 .App {
   text-align: center;
 }
@@ -15,6 +17,7 @@
 
 .App-header {
   background-color: #F8E3DA; /*#282c34*/
+  font-family: 'Nunito', sans-serif;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,6 +25,7 @@
  /* justify-content: center;*/
   font-size: calc(10px + 2vmin);
   color: black;
+  line-height: 1em;
 }
 
 .App-link {
