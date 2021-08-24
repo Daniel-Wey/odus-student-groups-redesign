@@ -7,18 +7,18 @@ class RequestingForm extends React.Component {
     render() {
         return (
             <div>
-                <h6>What would you like to request?</h6>
+                <h6><b>What would you like to request?</b></h6>
                 <TextInputField
                     placeholder="Enter name of item here"
                 />
 
-                <h6>Price Range</h6>
+                <h6><b>Price Range</b></h6>
                 <TextInputField
                     placeholder="Enter price range here"
                 />
 
 
-                <h6>Category</h6>
+                <h6><b>Category</b></h6>
                 <Combobox
                     openOnFocus
                     width="100%"
