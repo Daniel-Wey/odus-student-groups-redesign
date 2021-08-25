@@ -7,7 +7,6 @@ import React from "react";
 import Carousel from "react-elastic-carousel";
 import './Styles/carousel.css';
 import Card from './card.js';
-import Bottom from "./LandingPageBottom.js"
 
 
 class carousel extends React.Component {

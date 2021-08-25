@@ -1,16 +1,11 @@
-import React, { Component } from 'react'
+import React from 'react'
 import './Styles/homeStyle.css'
 
 // Replace with local path, ensurre that "./" is at the beginning if sourced from same directory
 import logo from './images/tigertradelogo.png'
-import {
-    Row, Col, InputGroup, Input, Form,
-    ListGroup, ListGroupItem, Container, Modal, ModalHeader, ModalBody, ModalFooter, 
-
-} from 'reactstrap';
 
 import {
-    Avatar, Popover, Pane, TextInput, Button, TextareaField, CornerDialog
+    Button, TextareaField, CornerDialog
 } from 'evergreen-ui'
 
 class Home extends React.Component {
@@ -37,7 +32,7 @@ class Home extends React.Component {
                 <span><b>Trade goods with other Princeton students!</b></span>  
                 <br></br><br></br><br></br>
 
-                <button class="button" id="loginButton"><span><b>LOG IN!</b></span></button>
+                <button className="button" id="loginButton"><span><b>LOG IN!</b></span></button>
                 <div id="feedback">
                     <span>Questions or concerns?</span>
                    {/* <button id="feedbackButton"><b><u>Send us feedback!</u></b></button> */}
@@ -52,6 +47,7 @@ class Home extends React.Component {
                                     description="Pull down at the lower right of the textbox to adjust your view"
                                     name="textarea-1"
                                     placeholder="Enter text here"
+                                    label=""
                                 />
                         </CornerDialog>
                         <Button onClick={() => this.setIsShown(true)}>
@@ -76,7 +72,7 @@ class Home extends React.Component {
 
             
                 <div id="bottomBar">
-                    <span class = "bottomText" >Made with love @Hoagie </span>
+                    <span className = "bottomText" >Made with love @Hoagie </span>
                 </div>
             </div>
         ) 

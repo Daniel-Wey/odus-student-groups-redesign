@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
+import React from 'react'
 import {
-    Row, Col, InputGroup, Input, Button, Form,
-    ListGroup, ListGroupItem, Container, Modal, ModalHeader, ModalBody, ModalFooter,
+    InputGroup, Input, Button, Form,
+    ListGroupItem, Modal, ModalHeader, ModalBody, ModalFooter,
 
 } from 'reactstrap';
 

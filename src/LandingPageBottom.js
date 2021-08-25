@@ -1,12 +1,8 @@
-import React, { Component } from 'react'
+import React from 'react'
 import './Styles/LandingPageBottomStyle.css'
 import Tile from "./Tile.js"
 
-import {
-    Row, Col, InputGroup, Input, Button, Form,
-    ListGroup, ListGroupItem, Container, Modal, ModalHeader, ModalBody, ModalFooter,
 
-} from 'reactstrap';
 
 //import Divider from 'react-native-elements';
 

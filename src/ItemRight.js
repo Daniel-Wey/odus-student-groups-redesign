@@ -1,15 +1,10 @@
-import React, { Component } from 'react'
+import React from 'react'
 import './Styles/ItemRightStyle.css'
+
+/*
 import { IoInformationCircleOutline } from "react-icons/io5";
 import info from './images/info.jpg'
-
-
-import {
-    Row, Col, InputGroup, Input, Button, Form,
-    ListGroup, ListGroupItem, Container, Modal, ModalHeader, ModalBody, ModalFooter,
-
-} from 'reactstrap';
-
+*/
 
 class ItemRight extends React.Component {
     render() {

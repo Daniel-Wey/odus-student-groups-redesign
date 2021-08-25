@@ -1,8 +1,6 @@
 import Left from './itemLeft.js';
 import Right from './ItemRight.js';
 
-import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
-
 function itemPage() {
   return (
     <div className="App">

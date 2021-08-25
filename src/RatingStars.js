@@ -1,5 +1,5 @@
 import React from 'react'
-const numbers = [1, 2, 3, 4, 5];
+/*const numbers = [1, 2, 3, 4, 5];
 const listItems = numbers.map((number) =>
  <li>{number}</li>
 );
@@ -10,7 +10,7 @@ let stars2 = [];
 let rating = 5;
 
 
-
+*/
 
 
 class RatingStars extends React.Component {
@@ -47,16 +47,19 @@ class RatingStars extends React.Component {
         {this.stars} */}
 
 
-            <svg width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"> <path d={this.filledStar}/> </svg>
-            <svg width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"> <path d={this.filledStar}/> </svg>
-            <svg width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"> <path d={this.filledStar}/> </svg>
-            <svg width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"> <path d={this.filledStar}/> </svg>
-            <svg width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16"> <path d={this.emptyStar}/> </svg>
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"> <path d={this.filledStar}/> </svg>
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"> <path d={this.filledStar}/> </svg>
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"> <path d={this.filledStar}/> </svg>
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"> <path d={this.filledStar}/> </svg>
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"> <path d={this.halfStar}/> </svg>
                 
                 {/**
                 <br></br>
                 <svg width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"> <path d={this.filledStar}/> </svg>
-                <svg width="16" height="16" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16"> <path d={this.halfStar}/> </svg> */}
+                <svg width="16" height="16" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16"> <path d={this.halfStar}/> </svg> 
+                            <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"> <path d={this.emptyStar}/> </svg>
+*/}
+                
             </div>
         )
     }

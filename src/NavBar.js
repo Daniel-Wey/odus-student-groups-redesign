@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
-import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
+import { /*BrowserRouter, Route, Switch,*/Link } from "react-router-dom";
 import './Styles/NavBarStyles.css'
 import {
-  Collapse,
   Navbar,
-  NavbarToggler,
   NavbarBrand,
   Nav,
   NavItem,
+/*  Collapse,
+  NavbarToggler,
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
-  NavbarText
+  NavbarText*/
 } from 'reactstrap';
 
 class NavBar extends React.Component {

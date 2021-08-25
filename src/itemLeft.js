@@ -1,14 +1,13 @@
-import React, { Component } from 'react'
+import React from 'react'
 import './Styles/itemLeftstyles.css'
 
 import plush1 from './images/plush1.jpg'
 import plush2 from './images/plush2.jpeg'
 import plush3 from './images/plush3.jpeg'
-import avatar from './images/avatar.png'
 
 
 import {
-    Avatar, Popover, Pane, TextInput, Button, TextareaField, CornerDialog
+    Avatar, Popover, Pane, Button, TextareaField
 } from 'evergreen-ui'
 
 // placeholder for no image

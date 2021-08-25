@@ -1,12 +1,7 @@
-import React, { Component } from 'react'
+import React from 'react'
 import './Styles/aboutStyle.css'
 
 import avatar from './images/avatar.png'
-import {
-    Row, Col, InputGroup, Input, Button, Form,
-    ListGroup, ListGroupItem, Container, Modal, ModalHeader, ModalBody, ModalFooter,
-
-} from 'reactstrap';
 
 // This will be where to make the "About" page
 class About extends React.Component {
