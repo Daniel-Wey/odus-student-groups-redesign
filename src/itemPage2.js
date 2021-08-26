@@ -55,7 +55,7 @@ class itemPage2 extends React.Component {
                     <div id="main-image" style={{ width: "40%", marginLeft: "20px", display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center" }}>
                         <Button onClick={() => this.setMainImg(this.state.selectedImage - 1)}
                             borderRadius={100} width={60} height={60} style={{ boxShadow: "0px 8px 15px rgba(0, 0, 0, 0.1)", border: "none" }}>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                            <svg width="50" height="50" fill="currentColor" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
                             </svg>
                         </Button>

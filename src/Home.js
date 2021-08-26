@@ -67,6 +67,7 @@ class Home extends React.Component {
                 <span><a className="temp" href="landingPageBottom">link to landing page bottom</a></span><br></br> */}
             <span><a className="temp" href="landingPage">landing page merge</a></span><br></br>
                 <span><a className="temp" href="sellingPage">selling page</a></span><br></br>
+                <span><a className="temp" href="splashPage">splash page</a></span><br></br>
 
 
 

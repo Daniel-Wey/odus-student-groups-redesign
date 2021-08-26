@@ -5,6 +5,7 @@ import ItemPage from './itemPage.js'
 import LandingPage from './LandingPage.js'
 import SellingPage from './SellingPage.js'
 import ItemPage2 from './itemPage2.js'
+import SplashPage from './SplashPage.js'
 
 /*
 import ItemLeft from './itemLeft.js'
@@ -39,6 +40,7 @@ class StartPage extends React.Component {
                 <Route exact path="/itemLeft" component={withRouter(ItemLeft)} />*/}
                 <Route exact path="/landingPage" component={withRouter(LandingPage)} /> 
                 <Route exact path="/sellingPage" component={withRouter(SellingPage)} />
+                <Route exact path="/splashPage" component={withRouter(SplashPage)} />
 
 
 
