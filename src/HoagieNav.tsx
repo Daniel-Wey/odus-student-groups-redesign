@@ -1,4 +1,4 @@
-import { majorScale, Pane } from "evergreen-ui"
+import { majorScale, Pane, Button } from "evergreen-ui"
 import { ComponentType } from "react"
 import { Link } from "react-router-dom";
 
@@ -13,7 +13,7 @@ const Nav = ({name, logoComponent}:NavProps) => {
     return (
         <Pane elevation={1}>
             <Pane width="100%" height={20} background="#DE7548"></Pane>
-            <Pane display="flex" justifyContent="center" width="100%" height={majorScale(9)} background="white">
+            <Pane display="flex" justifyContent="center" width="100%" height={majorScale(9)} background="white" style={{color: "black"}} >
                 <Pane 
                     display="flex" 
                     alignItems="center" 
@@ -28,6 +28,8 @@ const Nav = ({name, logoComponent}:NavProps) => {
                             {logoComponent ? logoComponent : <Pane>hoagie<b>{name}</b></Pane>}
                         </Pane>
                     </Link>
+
+                    <Link to = "/About">About</Link>
                 </Pane>
             </Pane>
         </Pane>
