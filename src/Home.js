@@ -61,7 +61,6 @@ class Home extends React.Component {
                 <p><a href="itemLeft">temporary link to specific item page (left)</a></p>
                 <p><a href="itemRight">temporary link to specific item page (right)</a></p>*/}
                 <span><a className="temp" href="itemPage">Item page</a></span><br></br>
-                <span><a className="temp" href="itemPage2">Item page v2</a></span><br></br>
 
            {/*     <span><a className="temp" href="carousel">link to carousel</a></span><br></br>
                 <span><a className="temp" href="landingPageBottom">link to landing page bottom</a></span><br></br> */}

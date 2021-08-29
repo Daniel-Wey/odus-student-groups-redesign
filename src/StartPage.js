@@ -1,10 +1,9 @@
 import React from 'react'
 import About from './About.js'
 import Home from './Home.js'
-import ItemPage from './itemPage.js'
 import LandingPage from './LandingPage.js'
 import SellingPage from './SellingPage.js'
-import ItemPage2 from './itemPage2.js'
+import ItemPage from './itemPage.js'
 import SplashPage from './SplashPage.js'
 
 /*
@@ -32,7 +31,6 @@ class StartPage extends React.Component {
 
                 
                 <Route exact path="/itemPage" component={withRouter(ItemPage)} />
-                <Route exact path="/itemPage2" component={withRouter(ItemPage2)} />
 
           {/*}      <Route exact path="/landingPageBottom" component={withRouter(LandingPageBottom)} />
                 <Route exact path="/carousel" component={withRouter(Carousel)} /> 
