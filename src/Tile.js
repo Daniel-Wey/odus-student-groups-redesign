@@ -4,7 +4,10 @@ import { SearchInput, Pane, Badge, Pill, Button } from "evergreen-ui";
 
 
 class Tile extends React.Component {
-
+    constructor(props) {
+        super(props)
+    }
+    
     render() {
         var tagNames = this.props.tagNames;
         let categories = [];
