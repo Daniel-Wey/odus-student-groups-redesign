@@ -9,29 +9,28 @@ import Tile from "./Tile.js"
 class LandingPageBottom extends React.Component {
     render() {
         return (
-            <div >
-                <div >
-                <span id = "listings"> All listings</span>
-                </div>
+            <div>
 
-                <div id= "itemList"> 
-                    <div id = "firstRow">
-                    <Tile id ="product1" productUrl = {"https://i.ebayimg.com/images/g/pUEAAOSwNjJdgndO/s-l300.jpg"} alt = {"Princeton mug"} name = {"Princeton mug"} amt = {50} />
-                    <Tile id ="product2" productUrl = {"https://i.ebayimg.com/images/g/pUEAAOSwNjJdgndO/s-l300.jpg"} alt = {"Princeton mug"} name = {"Princeton mug"} amt = {50} />
-                    <Tile id ="product3" productUrl = {"https://i.ebayimg.com/images/g/pUEAAOSwNjJdgndO/s-l300.jpg"} alt = {"Princeton mug"} name = {"Princeton mug"} amt = {50} />
-                    <Tile id ="product4" productUrl = {"https://i.ebayimg.com/images/g/pUEAAOSwNjJdgndO/s-l300.jpg"} alt = {"Princeton mug"} name = {"Princeton mug"} amt = {50} />
-                    <Tile id ="product5" productUrl = {"https://i.ebayimg.com/images/g/pUEAAOSwNjJdgndO/s-l300.jpg"} alt = {"Princeton mug"} name = {"Princeton mug"} amt = {50} />
+
+                <div style={{ display: "flex", flexDirection:"row", alignItems: "center", }}>
+                    <div id="firstRow">
+                        <Tile id="product1" productUrl={"https://i.ebayimg.com/images/g/pUEAAOSwNjJdgndO/s-l300.jpg"} alt={"Princeton mug"} name={"Princeton mug"} amt={50} tagNames={["test", "test2"]} />
+                        <Tile id="product2" productUrl={"https://i.ebayimg.com/images/g/pUEAAOSwNjJdgndO/s-l300.jpg"} alt={"Princeton mug"} name={"Princeton mug"} amt={50} tagNames={["test"]} />
+                        <Tile id="product3" productUrl={"https://i.ebayimg.com/images/g/pUEAAOSwNjJdgndO/s-l300.jpg"} alt={"Princeton mug"} name={"Princeton mug"} amt={50} tagNames={["test"]} />
+
                     </div>
-                    
+
+                    {/*
                     <div id = "secRow">
                     <Tile id ="product1" productUrl = {"https://i.ebayimg.com/images/g/pUEAAOSwNjJdgndO/s-l300.jpg"} alt = {"Princeton mug"} name = {"Princeton mug"} amt = {50} />
                     <Tile id ="product2" productUrl = {"https://i.ebayimg.com/images/g/pUEAAOSwNjJdgndO/s-l300.jpg"} alt = {"Princeton mug"} name = {"Princeton mug"} amt = {50} />
                     <Tile id ="product3" productUrl = {"https://i.ebayimg.com/images/g/pUEAAOSwNjJdgndO/s-l300.jpg"} alt = {"Princeton mug"} name = {"Princeton mug"} amt = {50} />
                     <Tile id ="product4" productUrl = {"https://i.ebayimg.com/images/g/pUEAAOSwNjJdgndO/s-l300.jpg"} alt = {"Princeton mug"} name = {"Princeton mug"} amt = {50} />
                     <Tile id ="product5" productUrl = {"https://i.ebayimg.com/images/g/pUEAAOSwNjJdgndO/s-l300.jpg"} alt = {"Princeton mug"} name = {"Princeton mug"} amt = {50} />
-
+                    
                     
                     </div>
+                    */}
                     {/*
                     <div id = "thirdRow">
                     <Tile id ="product1" productUrl = {"https://i.ebayimg.com/images/g/pUEAAOSwNjJdgndO/s-l300.jpg"} alt = {"Princeton mug"} name = {"Princeton mug"} amt = {50} />
@@ -54,7 +53,7 @@ class LandingPageBottom extends React.Component {
                     </div>
                 
                     
-                    */}                    
+                    */}
                     {/* 
                     <div id="item1">
                     <span class="name"> Item Name</span>
@@ -96,7 +95,7 @@ class LandingPageBottom extends React.Component {
                     </div>
                     */}
                 </div>
-               
+
             </div>
         )
     }
