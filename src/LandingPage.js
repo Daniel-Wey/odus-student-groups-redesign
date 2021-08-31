@@ -7,7 +7,8 @@ class LandingPage extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            filteredData: Array(3).fill(undefined),
+            filteredData: [],
+            dataList: []
         }
 
         this.dataHandler = this.dataHandler.bind(this);
@@ -19,18 +20,10 @@ class LandingPage extends React.Component {
         });
     }
 
-    setChecked(state, index) {
-        const newChecked = [...this.state.checked]
-        newChecked[index] = state;
-        this.setState({
-            checked: newChecked
-        });
-    }
-
     render() {
         return (
             <div>
-                <Filter dataHandler = {this.dataHandler}/>
+                <Filter data =  {} dataHandler = {this.dataHandler}/>
                 <SearchBar/>
                 <Bottom/>
             </div>
