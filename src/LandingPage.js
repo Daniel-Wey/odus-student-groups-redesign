@@ -22,8 +22,9 @@ class LandingPage extends React.Component {
 
         var dataList = [];
 
-        const tile1 = new TileModel("product1", "https://i.ebayimg.com/images/g/pUEAAOSwNjJdgndO/s-l300.jpg", "Princeton mug", "Princeton mug", 50, ["test", "test2"]);
-        const tile2 = new TileModel("product2", "https://i.ebayimg.com/images/g/pUEAAOSwNjJdgndO/s-l300.jpg", "Princeton mug", "Princeton mug", 50, ["test"]);
+        // TODO: Mandate all tags expressed internally through lowercase
+        const tile1 = new TileModel("product1", "https://i.ebayimg.com/images/g/pUEAAOSwNjJdgndO/s-l300.jpg", "Princeton mug", "Princeton mug", 50, ["Appliances", "test2"]);
+        const tile2 = new TileModel("product2", "https://i.ebayimg.com/images/g/pUEAAOSwNjJdgndO/s-l300.jpg", "Princeton mug", "Princeton mug", 50, ["furniture"]);
         const tile3 = new TileModel("product3", "https://i.ebayimg.com/images/g/pUEAAOSwNjJdgndO/s-l300.jpg", "Princeton mug", "Princeton mug", 50, ["test"]);
         const tile4 = new TileModel("product4", "https://i.ebayimg.com/images/g/pUEAAOSwNjJdgndO/s-l300.jpg", "Princeton mug", "Princeton mug", 50, ["test"]);
 
@@ -48,7 +49,6 @@ class LandingPage extends React.Component {
     }
 
     render() {
-        console.log("This is a test");
         return (
             <div>
 

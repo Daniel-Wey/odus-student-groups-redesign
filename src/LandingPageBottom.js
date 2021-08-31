@@ -11,8 +11,6 @@ class LandingPageBottom extends React.Component {
             tiles.push(<Tile id={data[i].id} productUrl={data[i].productUrl} alt={data[i].alt} name = {data[i].name} amt ={data[i].amt} tagNames = {data[i].tagNames}/>);
         }
 
-        console.log("This is a test");
-
         return (
             <div>
                 <div style={{display: "flex", justifyContent: "space-between", width: "800px", flexWrap: "wrap"}}>

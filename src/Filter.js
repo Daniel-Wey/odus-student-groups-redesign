@@ -32,35 +32,32 @@ class Filter extends React.Component {
         });
     }
 
+    filter() {
+        const remainingCheckboxes = this.state.checkboxList.filter(checkbox => checkbox.checked == true);
+        const filterLength = remainingCheckboxes.length;
 
-    render() {
-        // var tagNames = this.props.tagNames;
-        // let categories = [];
-
-        // categories.push(<Badge fontSize = {15}>{tagNames[0]}</Badge>);
-        // for (let i = 1; i < tagNames.length; i++) {
-        //     categories.push(<Badge marginLeft = {10} fontSize = {15}>{tagNames[i]}</Badge>);
-        // }
-
-        function _filter() {
-            const remainingCheckboxes = this.state.checkboxList.filter(checkbox => checkbox.checked == true);
-    
-            let dataFiltering = function (data) {
-                for (let i = 0; i < remainingCheckboxes.length; i++) {
-                    if (data.tagNames.includes(remainingCheckboxes[i].label)) {
-                        return true;
-                    }
-                }
-    
-                return false;
-            }
-    
-            const filteredData = this.props.dataList.filter(data => dataFiltering(data));
-            this.props.dataHandler(filteredData);
+        if (filterLength == 0){
+            this.props.dataHandler(this.props.dataList);
+            return;
         }
 
-        const filter = _filter.bind(this);
+        let dataFiltering = function (data) {
+            for (let i = 0; i < filterLength; i++) {
+                if (data.tagNames.includes(remainingCheckboxes[i].label.toLowerCase())) {
+                    return true;
+                }
+            }
 
+            return false;
+        }
+
+        const filteredData = this.props.dataList.filter(data => dataFiltering(data));
+        this.props.dataHandler(filteredData);
+    }
+
+    render() {
+
+        const filter = this.filter.bind(this);
         return (
             <div>
                 <Pane backgroundColor="white" borderRadius={20} width={250} marginTop={25} display="flex" justifyContent="flex-start" flexDirection="column" paddingTop={10} paddingBottom={20} position ="relative" flexWrap="wrap" marginRight={20} marginTop={40}>
@@ -73,7 +70,7 @@ class Filter extends React.Component {
                             <Checkbox label = "Furniture" checked = {this.state.checkboxList[1].checked} onChange={e => this.setChecked(e.target.checked, 1)}/>
                         </Pane>
                         
-                        <Button borderColor="#DE7548" color="#DE7548" borderRadius={10} onClick={this.filter}>Filter</Button>
+                        <Button borderColor="#DE7548" color="#DE7548" borderRadius={10} onClick={filter}>Filter</Button>
                     </Pane>
                 </Pane>
             </div>
