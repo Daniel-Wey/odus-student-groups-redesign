@@ -32,22 +32,6 @@ class Filter extends React.Component {
         });
     }
 
-    filter() {
-        const remainingCheckboxes = this.state.checkboxList.filter(checkbox => checkbox.checked == true);
-
-        let dataFiltering = function (data) {
-            for (let i = 0; i < remainingCheckboxes.length; i++) {
-                if (data.tagNames.includes(remainingCheckboxes[i].label)) {
-                    return true;
-                }
-            }
-
-            return false;
-        }
-
-        const filteredData = this.props.dataList.filter(data => dataFiltering(data));
-        this.props.dataHandler(filteredData);
-    }
 
     render() {
         // var tagNames = this.props.tagNames;
@@ -58,9 +42,28 @@ class Filter extends React.Component {
         //     categories.push(<Badge marginLeft = {10} fontSize = {15}>{tagNames[i]}</Badge>);
         // }
 
+        function _filter() {
+            const remainingCheckboxes = this.state.checkboxList.filter(checkbox => checkbox.checked == true);
+    
+            let dataFiltering = function (data) {
+                for (let i = 0; i < remainingCheckboxes.length; i++) {
+                    if (data.tagNames.includes(remainingCheckboxes[i].label)) {
+                        return true;
+                    }
+                }
+    
+                return false;
+            }
+    
+            const filteredData = this.props.dataList.filter(data => dataFiltering(data));
+            this.props.dataHandler(filteredData);
+        }
+
+        const filter = _filter.bind(this);
+
         return (
             <div>
-                <Pane backgroundColor="white" borderRadius={20} width={250} marginTop={25} display="flex" justifyContent="flex-start" flexDirection="column" paddingTop={10} paddingBottom={20} position ="relative" flexWrap="wrap">
+                <Pane backgroundColor="white" borderRadius={20} width={250} marginTop={25} display="flex" justifyContent="flex-start" flexDirection="column" paddingTop={10} paddingBottom={20} position ="relative" flexWrap="wrap" marginRight={20} marginTop={40}>
                     <Pane marginTop={20} marginLeft = {20} display="flex" flexDirection="column" alignItems="flex-start" >
                         <span style={{fontSize:"30px"}}><b>Filter</b></span>
 
